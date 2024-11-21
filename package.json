@@ -1,0 +1,37 @@
+{
+  "name": "program-language-batch",
+  "displayName": "program-language-batch",
+  "description": "Language support for batch-files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "bat",
+        "aliases": [
+          "batch",
+          "bat"
+        ],
+        "extensions": [
+          ".bat"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bat",
+        "scopeName": "source.bat",
+        "path": "./syntaxes/bat.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
